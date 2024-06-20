@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>회원 정보</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card">
+                <div class="card-header">
+                    회원 정보
+                </div>
+                <div class="card-body">
+                    <form name="registerForm">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">아이디</span>
+                            <input type="text" name="mid" id="mid" class="form-control" placeholder="아이디" readonly>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">비밀번호</span>
+                            <input type="password" name="mpw" id="mpw" class="form-control" placeholder="비밀번호">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">이름</span>
+                            <input type="text" name="mname" id="mname" class="form-control" placeholder="이름">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">이메일</span>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="이메일">
+                        </div>
+                    </form>
+                    <div class="my-4">
+                        <div class="float-end">
+                            <button type="button" class="btn btn-primary btn-update">수정</button>
+                            <button type="button" class="btn btn-danger btn-delete">삭제</button>
+                            <button type="button" class="btn btn-secondary btn-list">목록</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+window.addEventListener("load", function () {
+    loadUserInfo();
+});
+
+function loadUserInfo() {
+    const mid = localStorage.getItem("mid");
+    const apiUrl = "http://localhost:8080/api/member/modify/" + mid;
+
+    axios.get(apiUrl, {
+        headers: {
+            Authorization: `Bearer ${localStorage.getItem("accessToken")}`
+        }
+    })
+    .then(response => {
+        const userInfo = response.data; 
+        document.registerForm.mid.value = userInfo.mid;
+        document.registerForm.mpw.value = userInfo.mpw;
+        document.registerForm.mname.value = userInfo.mname;
+        document.registerForm.email.value = userInfo.email;
+    })
+    .catch(error => {
+        console.error("사용자 정보를 불러오는 중 오류 발생:", error);
+        alert("사용자 정보를 불러오는 중 오류가 발생했습니다.");
+    });
+}
+
+document.querySelector(".btn-secondary").addEventListener("click", function () {
+    window.location.href = "list.html";
+});
+
+document.querySelector(".btn-delete").addEventListener("click", function () {
+    if (confirm("정말로 탈퇴하시겠습니까?")) {
+        const mid = localStorage.getItem("mid");
+        const apiUrl = "http://localhost:8080/api/member/delete/" + mid;
+
+        axios.delete(apiUrl, {
+            headers: {
+                Authorization: `Bearer ${localStorage.getItem("accessToken")}`
+            }
+        })
+        .then(response => {
+            alert("회원 탈퇴가 완료되었습니다.");
+            localStorage.clear();
+            window.location.href = "apilogin.html";
+        })
+        .catch(error => {
+            console.error("회원 탈퇴 중 오류 발생:", error);
+            alert("회원 탈퇴 중 오류가 발생했습니다.");
+        });
+    }
+});
+document.querySelector(".btn-update").addEventListener("click", function () {
+    const mid = document.getElementById("mid").value;
+    const mpw = document.getElementById("mpw").value;
+    const mname = document.getElementById("mname").value;
+    const email = document.getElementById("email").value;
+
+    const updateData = {
+        mid: mid,
+        mpw: mpw,
+        mname: mname,
+        email: email
+    };
+
+    const apiUrl = "http://localhost:8080/api/member/modify/" + mid;
+
+    axios.post(apiUrl, updateData, {
+        headers: {
+            Authorization: `Bearer ${localStorage.getItem("accessToken")}`
+        }
+    })
+    .then(response => {
+        alert("회원 정보가 수정되었습니다.");
+        loadUserInfo();
+    })
+    .catch(error => {
+        console.error("회원 정보 수정 중 오류 발생:", error);
+        alert("회원 정보 수정 중 오류가 발생했습니다.");
+    });
+});
+
+
+
+</script>
+</body>
+</html>

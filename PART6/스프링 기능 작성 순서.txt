@@ -1,0 +1,5 @@
+1 . DTO, VO(domain) 데이터를 담는 객체 부터 작성
+2 . Repogitory(스프링 부트), DAO(JSP,스프링), Mapper(Mybatis) DB와 연결하기 위한 인터페이스 작성
+3 . Service 작성 : DTO<->VO 변환, 다른 비지니스 로직들
+4 . Controller 작성 : 요청을 처리하는 주소 작성, 화면에 출력할 데이터 불러오기, 다음 화면을 설정
+5 . View작성 : JSP(스프링, JSP)파일 작성, HTML(스프링 부트=Thymeleaf)

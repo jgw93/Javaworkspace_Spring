@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0d1566fb-5c69-47d3-a9c8-f7e96803942f" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/domain/Reply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/repository/BoardSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/repository/BoardSearchImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/board/read.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/notice_modify.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/config/CustomServletConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/controller/ReplyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/controller/advice/CustomRestAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/domain/Reply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/dto/BoardListReplyCountDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/dto/LoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/dto/ReplyDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/repository/NoticeSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/repository/NoticeSearchImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/repository/ReplyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/service/ReplyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/service/ReplyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b02/src/main/resources/memo/6_REST_memo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b02/src/test/java/org/zerock/b01/repository/ReplyRepositoryTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b02/src/test/java/org/zerock/b01/service/ReplyServiceTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jdbcex/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/B01Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/B01Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/config/RootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/config/RootConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/controller/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/controller/SampleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/controller/SampleJSONController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/controller/SampleJSONController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/domain/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/domain/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/domain/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/domain/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/domain/notice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/domain/notice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/dto/BoardDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/dto/BoardDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/dto/NoticeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/dto/NoticeDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/dto/PageRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/dto/PageRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/dto/PageResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/dto/PageResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/repository/BoardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/repository/BoardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/repository/NoticeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/repository/NoticeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/repository/search/BoardSearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/repository/search/BoardSearchImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/service/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/service/BoardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/service/NoticeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/service/NoticeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/service/NoticeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/service/NoticeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/static/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/static/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/static/css/layout_base.css" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/static/css/layout_base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/static/css/swiper.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/static/css/swiper.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/static/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/static/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/static/js/jquery.smooth-scroll.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/static/js/jquery.smooth-scroll.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/static/js/rollmain.js" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/static/js/rollmain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/static/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/static/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/static/js/swiper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/static/js/swiper.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/board/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/board/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/board/modify.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/board/modify.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/board/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/board/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/common.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/common.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/ex1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/ex1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/ex2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/ex2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/ex3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/ex3_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/join.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/join.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/mypage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/mypage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/notice_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/notice_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/notice_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/notice_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/notice_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/notice_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/program.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/program.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/hello.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/layout/basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/layout/basic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/layout/layout1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/layout/layout1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/test/java/org/zerock/b01/B01ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/test/java/org/zerock/b01/B01ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/test/java/org/zerock/b01/DataSourceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/test/java/org/zerock/b01/DataSourceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/test/java/org/zerock/b01/repository/BoardRepositoryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/test/java/org/zerock/b01/repository/BoardRepositoryTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/test/java/org/zerock/b01/service/BoardServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/test/java/org/zerock/b01/service/BoardServiceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b02/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../b02/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/controller/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/controller/SampleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/controller/SampleJSONController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/controller/SampleJSONController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/domain/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/domain/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/dto/BoardDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/dto/BoardDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/dto/NoticeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/dto/NoticeDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/repository/BoardSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/repository/BoardSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/repository/BoardSearchImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/repository/BoardSearchImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/repository/NoticeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/repository/NoticeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/service/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/service/BoardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/service/NoticeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/service/NoticeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/service/NoticeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b02/src/main/java/org/zerock/b01/service/NoticeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b02/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../b02/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b02/src/main/resources/templates/board/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b02/src/main/resources/templates/board/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b02/src/main/resources/templates/ex/notice_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b02/src/main/resources/templates/ex/notice_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b02/src/main/resources/templates/ex/notice_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b02/src/main/resources/templates/ex/notice_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b02/src/main/resources/templates/ex/notice_modify.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b02/src/main/resources/templates/ex/notice_modify.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b02/src/main/resources/templates/ex/notice_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b02/src/main/resources/templates/ex/notice_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b02/src/main/resources/templates/layout/layout1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b02/src/main/resources/templates/layout/layout1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b02/src/test/java/org/zerock/b01/repository/BoardRepositoryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b02/src/test/java/org/zerock/b01/repository/BoardRepositoryTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcex/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcex/.idea/gradle.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "jgw93"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/jgw93/Java_Spring.git",
+    "accountId": "e729eabe-e501-43ef-9e8e-6917034b0698"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2fnuJVqkAwh61aZ5YOGJSw6coNn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Javaworkspace_Spring/w2",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="0d1566fb-5c69-47d3-a9c8-f7e96803942f" name="변경" comment="" />
+      <created>1714449091158</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714449091158</updated>
+      <workItem from="1714449092214" duration="27000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

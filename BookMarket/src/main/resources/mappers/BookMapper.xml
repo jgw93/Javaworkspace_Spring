@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.zerock.bookmarket.mapper.BookMapper">
+    <insert id="insert">
+        INSERT INTO book (id, name, description, category, author, publisher, releaseDate,
+                          pages, unitPrice, unitInStock, imgFileName, createDate)
+        VALUES (#{id}, #{name}, #{description}, #{category}, #{author}, #{publisher}, #{releaseDate},
+                #{pages},#{unitPrice},#{unitInStock},#{imgFileName},#{createDate})
+    </insert>
+    <select id="selectAll" resultType="org.zerock.bookmarket.domain.Book">
+        select *
+        from book
+        order by id desc
+    </select>
+    <select id="selectOne" resultType="org.zerock.bookmarket.domain.Book">
+        select *
+        from book
+        where id = #{id}
+    </select>
+    <update id="update">
+        update book
+        set id = #{id},
+            name    = #{name},
+            description  = #{description},
+            category = #{category},
+            author = #{author},
+            publisher = #{publisher},
+            releaseDate = #{releaseDate},
+            pages = #{pages},
+            unitPrice = #{unitPrice},
+            unitInStock = #{unitInStock},
+            imgFileName = #{imgFileName}
+        where id = #{id}
+    </update>
+    <delete id="delete">
+        delete
+        from book
+        where id = #{id}
+    </delete>
+</mapper>
